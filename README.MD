@@ -1,28 +1,54 @@
----
-title: Brain Tumor Detection AI
-emoji: 🧠
-colorFrom: blue
-colorTo: red
-sdk: gradio
-sdk_version: 4.0.0
-app_file: app.py
-pinned: false
-license: mit
+# 🧠 Tumor Detection Model + Grad-CAM Visualization  
+
+This repository contains the **training pipeline** and **explainability module** for tumor detection using deep learning.  
+It includes:  
+- A trained **PyTorch model** (`disease_model.pth`)  
+- **Grad-CAM utility** for applying heatmaps to highlight tumor regions  
+- **Deployment-ready scripts** with Docker support  
+
 ---
 
-# Brain Tumor Detection AI
+## 🚀 Project Overview
+- Train and evaluate deep learning models for **tumor detection**.  
+- Use **Grad-CAM** to generate heatmaps over detected tumor regions for explainability.  
+- Containerized using **Docker** for easy deployment.  
 
-Advanced AI-powered brain tumor detection using DenseNet-121.
 
-## Features
-- Multi-class tumor classification (Glioma, Meningioma, Pituitary, No Tumor)
-- GradCAM visualization for tumor localization
-- Test-Time Augmentation for improved accuracy
-- Real-time analysis with confidence scores
+---
 
-## How to Use
-1. Upload a brain MRI scan (PNG, JPG, JPEG)
-2. Click "Analyze Brain Scan" or wait for auto-analysis
-3. View AI prediction results and visualization
+## ⚡ Features
+- 🧑‍⚕️ **Tumor Detection Model** (PyTorch)  
+- 🔥 **Grad-CAM Heatmaps** for explainability  
+- 📦 **Docker Support** for deployment  
+- 📜 Lightweight and reproducible environment  
+
+---
+
+## 🛠️ Tech Stack
+- **Framework**: PyTorch  
+- **Visualization**: Grad-CAM (OpenCV, Matplotlib)  
+- **Deployment**: FastAPI +Huggingface
+
+---
+
+## 🖥️ Running Locally
+Clone the repository and install dependencies:  
+
+```bash
+# Clone repo
+git clone https://github.com/manthirapriya18/<repo-name>.git
+cd <repo-name>
+
+# Create a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows use venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python app.py
+
+
 
 ⚠️ **Medical Disclaimer**: This tool is for educational and research purposes only. Always consult qualified medical professionals for diagnosis and treatment.

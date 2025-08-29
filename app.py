@@ -312,7 +312,7 @@ def create_interface():
     with gr.Blocks(title="Brain Tumor Detection AI", css=css, theme=gr.themes.Soft()) as demo:
         
         gr.Markdown("""
-        # 🧠 Brain Tumor Detection AI
+        # 🧠 Brain Tumor 
         
         **Advanced AI-powered brain tumor detection using DenseNet-121**
         

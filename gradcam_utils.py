@@ -131,3 +131,5 @@ def overlay_heatmap(img_input, heatmap, out_path=None, alpha=0.4):
         else:
             # Create placeholder image
             return np.zeros((224, 224, 3), dtype=np.uint8)
+        
+     
